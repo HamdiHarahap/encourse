@@ -1,0 +1,68 @@
+body {
+    background-color: #F2F9FE;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.text-purple {
+    color: #5755FE;
+}
+
+.bg-purple {
+    background-color: #5755FE;
+}
+
+header {
+    padding: 0 10rem;
+}
+
+.line {
+    background-color: black;
+    height: 2px;
+}
+
+main {
+    padding: 0 10rem;
+}
+
+#lessons {
+    height: 80vh;
+}
+
+.item {
+    background-color: #FFFFFF;
+}
+
+#test {
+    height: 80vh;
+}
+
+.logo div {
+    background-color: #FFF7FC;
+    opacity: 0.7;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+        
+.logo div:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+        
+.logo div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        
+.logo a img {
+    width: 25px;
+}
