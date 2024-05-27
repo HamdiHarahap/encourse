@@ -14,8 +14,16 @@ body::-webkit-scrollbar {
     background-color: #5755FE;
 }
 
+.bg-purpleTwo {
+    background-color: #7E8EF1;
+}
+
 .btn {
     border: none;
+}
+
+.menu {
+    display: none;
 }
 
 header {
@@ -115,17 +123,40 @@ input {
         width: 100%;
     }
 
-    header {    
+    main, header {
         padding: 0 1rem;
     }
 
-    main {
-        padding: 0 1rem;
+    header {
+        position: fixed;
+    }
+
+    li a {
+        color: #fff;
+    }
+
+    ul {
+        flex-direction: column;
+        visibility: hidden;
+        height: 0;
+    }
+
+    header .alive {
+        visibility: visible;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
     }
 
     .navbar {
         display: flex;
-        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar div:first-child {
+        width: 100%;
     }
 
     #home {
