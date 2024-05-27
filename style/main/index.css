@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F9FE;
+    background-color: #F2F9FE;  
 }
 
 body::-webkit-scrollbar {
@@ -110,8 +110,9 @@ input {
 
 @media screen and (max-width: 768px) {
     
-    body, header, footer {
+    html, body, header, footer {
         overflow-x: hidden;
+        width: 100%;
     }
 
     header {    
@@ -145,6 +146,7 @@ input {
     }
 
     #testimoni {
+        margin: 2rem 0;
         height: auto;
     }
 
