@@ -59,6 +59,10 @@ main {
     height: 100vh;
 }
 
+#testimoni section:last-child {
+    width: 100%;
+}
+
 #testimoni img {
     width: 320px;
     box-shadow: 7px 14px 18px 2px rgba(0,0,0,0.75); 
@@ -102,4 +106,72 @@ input {
         
 .logo a img {
     width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    body, header, footer {
+        overflow-x: hidden;
+    }
+
+    header {    
+        padding: 0 1rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #about {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    #detail {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        flex-direction: column;
+    }
+
+    #testimoni {
+        height: auto;
+    }
+
+    #testimoni section:first-child {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #testimoni section:last-child {
+        p {
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    #join {
+        height: 55vh;
+        flex-direction: column;
+    }
+
+    #join img {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
 }
