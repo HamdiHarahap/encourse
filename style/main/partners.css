@@ -58,3 +58,18 @@ main {
 .logo a img {
     width: 25px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    header, main {
+        padding: 0 1rem;
+    }
+
+    .partner {
+        flex-direction: column;
+    }
+}

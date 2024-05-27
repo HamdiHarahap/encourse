@@ -70,3 +70,32 @@ main {
 .logo a img {
     width: 25px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    header, main {
+        padding: 0 1rem;
+    }
+
+    #lessons, #test {
+        height: auto;
+    }
+
+    #test, #lessons {
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem 0;
+
+        img {
+            display: none;
+        }
+    }
+}
