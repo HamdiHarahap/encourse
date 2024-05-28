@@ -127,36 +127,8 @@ input {
         padding: 0 1rem;
     }
 
-    header {
-        position: fixed;
-    }
-
-    li a {
-        color: #fff;
-    }
-
-    ul {
-        flex-direction: column;
-        visibility: hidden;
-        height: 0;
-    }
-
-    header .alive {
-        visibility: visible;
-        height: auto;
-    }
-
-    .menu {
-        display: flex;
-    }
-
     .navbar {
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .navbar div:first-child {
-        width: 100%;
+        flex-direction: column;
     }
 
     #home {
