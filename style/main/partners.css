@@ -23,6 +23,10 @@ header {
     height: 2px;
 }
 
+.menu {
+    display: none;
+}
+
 main {
     padding: 0 10rem;
 }
@@ -61,12 +65,51 @@ main {
 
 @media screen and (max-width: 768px) {
 
-    .navbar {
-        flex-direction: column;
+    main {
+        padding: 0 1rem;
+        margin-top: 5rem;
     }
 
-    header, main {
-        padding: 0 1rem;
+    .navbar {
+        padding: 0.5rem 1rem;
+        background-color: #7E8EF1;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header {
+        top: 0;
+        width: 100%;
+        position: fixed;
+        width: 100%;
+        padding: 0;
+        z-index: 2;
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .navbar div:first-child {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar .list {
+        display: none;
+    }
+
+    header .navbar .alive {
+        display: flex;
+    }
+
+    ul {
+        margin-top: 2rem;
+        flex-direction: column;
     }
 
     .partner {

@@ -123,11 +123,47 @@ input {
         width: 100%;
     }
 
-    main, header {
+    main {
         padding: 0 1rem;
+        margin-top: 5rem;
     }
 
     .navbar {
+        padding: 0.5rem 1rem;
+        background-color: #7E8EF1;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header {
+        padding: 0;
+        position: fixed;
+        z-index: 2;
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .navbar div:first-child {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar .list {
+        display: none;
+    }
+
+    header .navbar .alive {
+        display: flex;
+    }
+
+    ul {
+        margin-top: 2rem;
         flex-direction: column;
     }
 
