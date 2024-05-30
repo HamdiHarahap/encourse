@@ -169,11 +169,13 @@ input {
 
     #home {
         height: auto;
+        margin-bottom: 4rem;
         flex-direction: column;
     }
 
     #about {
         height: auto;
+        margin-bottom: 4rem;
         flex-direction: column-reverse;
     }
 
